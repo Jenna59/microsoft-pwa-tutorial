@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  /* Radix UI blue scale in dark mode for all colors: https://www.radix-ui.com/colors */ 
+  background-color: #0D1520;
+  /* Classical Humanist Font Stack from https://modernfontstacks.com/ */
+  font-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
+}
+
+body {
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+main {
+  background-color: #111927;
+  padding: 2rem;
+}
+
+main,
+input,
+select {
+  color:#C2E6FF;
+}
+
+h1 {
+  font-size: 3.75rem;
+  margin: 0 0 2rem;
+}
+
+#converter {
+  font-size: 1.5rem;
+}
+
+label,
+output {
+  color:#70B8FF;
+}
+
+#input-temp,
+#input-unit,
+#output-unit
+{
+  font-size: 1.25rem;
+  background-color:#0D2847;
+  :hover {
+    background-color: #003362;
+  }
+}
+
