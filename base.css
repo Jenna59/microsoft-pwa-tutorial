@@ -51,16 +51,12 @@ output {
   font-size: 1.25rem;
   background-color:#0D2847;
   border: 1px solid #205D9E;
+  &:hover {
+    background-color: #003362;
+  }
+  &:focus {
+    border: 3px solid #2870BD;
+  }
 }
 
-#input-temp:hover,
-#input-unit:hover,
-#output-unit:hover {
-  background-color: #003362;
-}
-
-#input-temp:focus,
-#input-unit:focus,
-#output-unit:focus {
-  border: 3px solid #2870BD;
-}
+/** Possible Todo: give the dropdown selects custom styling v. default **/
