@@ -1,13 +1,15 @@
-const CACHE_VERSION = 'v1';
+const CACHE_VERSION = 'v2';
 const CACHE_NAME = `temperature-converter-${CACHE_VERSION}`;
+const GHPATH = '/microsoft-pwa-tutorial'
 
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME);
     await cache.addAll([
-      '/',
-      '/converter.js',
-      '/base.css'
+      `${GHPATH}/`
+      `${GHPATH}/index.html`,
+      `${GHPATH}/base.css`,
+      `${GHPATH}/converter.js`
     ]);
   })());
 });

@@ -3,14 +3,15 @@
   "name": "Temperature Conversion PWA",
   "short_name": "Temperature Converter",
   "description": "App that converts temperatures to and from Celsius, Fahrenheit, and Kelvin",
-  "start_url": "/",
+  "scope": "/microsoft-pwa-tutorial/",
+  "start_url": "/microsoft-pwa-tutorial/",
   "background_color": "#0D1520",
   "theme-color": "#0D1520",
   "orientation": "any",
   "display": "standalone",
   "icons": [
     {
-        "src": "/icon512.png",
+        "src": "/microsoft-pwa-tutorial/icon512.png",
         "sizes": "512x512"
     }
   ]

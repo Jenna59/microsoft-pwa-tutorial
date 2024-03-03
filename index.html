@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./base.css">
-  <link rel="manifest" href="./manifest.json">
+  <link rel="canonical" href="https://jenna59.github.io/microsoft-pwa-tutorial/">
+  <link rel="manifest" href="/microsoft-pwa-tutorial/manifest.webmanifest">
+  <link rel="stylesheet" href="/microsoft-pwa-tutorial/base.css">
   <title>Temperature Converter</title>
 </head>
   <body>
@@ -27,11 +28,11 @@
         </select>
         <output name="output-temp" id="output-temp" for="input-temp input-unit output-unit">68 F</output>
       </form>   
-      <script src="converter.js"></script>   
+      <script src="/microsoft-pwa-tutorial/converter.js"></script>   
     </main>
     <script>
       if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./sw.js', { scope: './' });
+        navigator.serviceWorker.register('/microsoft-pwa-tutorial/sw.js', { scope: '/microsoft-pwa-tutorial/' });
       }
       </script>
   </body>
