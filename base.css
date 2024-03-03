@@ -6,7 +6,7 @@
 
 html, body {
   height: 100%;
-  /* Radix UI blue scale in dark mode for all colors: https://www.radix-ui.com/colors */ 
+  /* Radix UI blue scale dark mode for all colors: https://www.radix-ui.com/colors/docs/palette-composition/understanding-the-scale */ 
   background-color: #0D1520;
   /* Classical Humanist Font Stack from https://modernfontstacks.com/ */
   font-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
@@ -50,8 +50,17 @@ output {
 {
   font-size: 1.25rem;
   background-color:#0D2847;
-  :hover {
-    background-color: #003362;
-  }
+  border: 1px solid #205D9E;
 }
 
+#input-temp:hover,
+#input-unit:hover,
+#output-unit:hover {
+  background-color: #003362;
+}
+
+#input-temp:focus,
+#input-unit:focus,
+#output-unit:focus {
+  border: 3px solid #2870BD;
+}
